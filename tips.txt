@@ -1,0 +1,49 @@
+git add -A
+//agrega todos los archivos sin seguimiento a staging
+
+git reset archivo.extension
+//elimina un archivo del area de staging
+
+git reset
+//elimina todos los archivos del area de staging
+
+git clone url carpeta
+//clona un repositorio remoto en una carpeta local
+
+git remote -v
+//ver info sobre el repositorio remoto
+
+git pull remoto branch
+git push remoto branch
+
+git branch nuevarama
+//crear rama 
+
+git branch
+//veo todas las ramas 
+
+git checkout nombrerama
+// cambio a la rama especificada (debe estar creada)
+
+git push -u remoto nuevarama
+//envío la nueva rama al repositorio remoto
+
+//fusionar con la rama master
+git checkout master
+git pull remoto master
+git branch --merged
+git merge nuevarama
+git push remoto master
+
+
+git branch -d nuevarama
+//descartar rama, una vez que se verificó la fusión
+
+git branch -a
+//se igual la rama porque se envió al remoto
+
+git push remoto --delete nuevarama
+//elimina la rama también del remoto
+
+git branch -a
+//la rama ya no se ve
